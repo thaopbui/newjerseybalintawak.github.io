@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | New Jersey Balintawak</title>
+<meta name="description" content="Get in touch with New Jersey Balintawak.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="New Jersey Balintawak logo">
+      <span class="brand-name">New Jersey Balintawak</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="updates.html">Updates</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section contact-page" style="padding-top:56px;">
+    <div class="wrap">
+      <p class="eyebrow">Get in Touch</p>
+      <h1>Contact Us</h1>
+
+      <div class="contact-grid" style="margin-top:2em;">
+        <div class="contact-block">
+          <h2 style="font-size:1.1rem;">Guro Frank Zhong</h2>
+          <p><a href="mailto:newjerseybalintawak@gmail.com">newjerseybalintawak@gmail.com</a></p>
+          <p><a href="tel:+17325585123">(732) 558-5123</a></p>
+          <p>986 Amboy Avenue<br>Metuchen, NJ 08837</p>
+        </div>
+
+        <form class="contact-form" action="mailto:newjerseybalintawak@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">First Name (required)</label>
+              <input type="text" id="fname" name="First Name" required>
+            </div>
+            <div class="form-field">
+              <label for="lname">Last Name (required)</label>
+              <input type="text" id="lname" name="Last Name" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone (Optional)</label>
+            <input type="tel" id="phone" name="Phone">
+          </div>
+          <div class="form-field">
+            <label for="message">Message (required)</label>
+            <span class="hint">Please describe why you would like to reach out to us and what your goals may be if you train with us.</span>
+            <textarea id="message" name="Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+          <p class="form-note">This form opens your email app to send the message directly &mdash; a static site can't process submissions on its own. See the README for how to wire up a no-code form backend instead, if you'd rather visitors not need an email client.</p>
+        </form>
+      </div>
+
+      <div class="disclaimer-box" style="border-top: 1px solid var(--line, #333); padding-top: 1.5rem; margin-top: 2rem; color: #888; font-size: 0.85rem; line-height: 1.5;">
+        <p><strong>Legal Entity Disclaimer:</strong> New Jersey Balintawak is a registered trade name (DBA) of Zhong Martial Arts &amp; Fitness LLC. All training programs, workshops, seminars, and events offered through New Jersey Balintawak are operated and administered by Zhong Martial Arts &amp; Fitness LLC.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> New Jersey Balintawak. All rights reserved.</p>
+    <p class="footer-sub">Balintawak Cuentada Arnis under Grandmaster Bobby Taboada&rsquo;s system.</p>
+    <p class="footer-legal">New Jersey Balintawak is a registered trade name (DBA) of Zhong Martial Arts &amp; Fitness LLC.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
