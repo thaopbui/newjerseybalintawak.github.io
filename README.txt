@@ -1,4 +1,4 @@
-NEW JERSEY BALINTAWAK — FULL SITE REPLICA
+NEW JERSEY BALINTAWAK — FULL SITE
 ============================================
 
 PAGES
