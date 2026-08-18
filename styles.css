@@ -225,7 +225,16 @@ blockquote p { font-family: var(--font-head); text-transform: none; font-size: 1
 
 /* Footer */
 .site-footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.6); padding: 24px 0 36px; font-size: 0.85rem; }
-.footer-inner { display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: space-between; }
+.footer-inner { display: flex; flex-wrap: wrap; gap: 16px 20px; justify-content: space-between; align-items: center; }
+.footer-text p:last-child { margin-bottom: 0; }
+.social-links { display: flex; gap: 10px; flex: none; }
+.social-links a {
+  color: rgba(255,255,255,0.7); display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.social-links a:hover { background: var(--brand); color: #fff; }
+.social-links svg { width: 18px; height: 18px; fill: currentColor; }
 .footer-sub { color: rgba(255,255,255,0.4); }
 .footer-legal { font-size: 0.8rem; color: #777777; margin-top: 0.5rem; }
 
