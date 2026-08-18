@@ -134,11 +134,13 @@ ul { margin: 0; padding: 0; list-style: none; }
 .section-narrow { max-width: 760px; }
 
 /* Lineage / people */
-.lineage-grid { display: grid; grid-template-columns: 1fr; gap: 64px; }
-.lineage-grid .portrait {
-  width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
-  background: var(--paper-dim); border: 2px solid var(--brand); margin-bottom: 24px;
+.lineage-grid { display: flex; flex-direction: column; gap: 64px; }
+.lineage-card { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.lineage-card .portrait {
+  width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+  background: var(--paper-dim); border: 2px solid var(--brand); margin-bottom: 0;
 }
+.lineage-content p:last-child { margin-bottom: 0; }
 .lineage-role {
   font-family: var(--font-head); text-transform: uppercase;
   letter-spacing: 0.04em; color: var(--brand); font-size: 0.85rem; margin-top: -0.6em;
@@ -227,7 +229,8 @@ blockquote p { font-family: var(--font-head); text-transform: none; font-size: 1
 
 /* Responsive */
 @media (max-width: 860px) {
-  .lineage-grid { grid-template-columns: 1fr; gap: 32px; }
+  .lineage-grid { gap: 40px; }
+  .lineage-card { grid-template-columns: 1fr; gap: 20px; }
   .level-grid { grid-template-columns: 1fr 1fr; }
   .training-grid { grid-template-columns: 1fr; gap: 22px; }
   .event-card { grid-template-columns: 1fr; }
