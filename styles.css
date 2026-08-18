@@ -140,6 +140,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
   background: var(--paper-dim); border: 2px solid var(--brand); margin-bottom: 0;
 }
+.lineage-card--full { grid-template-columns: 1fr; }
+.lineage-card--full .portrait { aspect-ratio: 16 / 9; margin-bottom: 24px; }
 .lineage-content p:last-child { margin-bottom: 0; }
 .lineage-role {
   font-family: var(--font-head); text-transform: uppercase;
