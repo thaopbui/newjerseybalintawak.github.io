@@ -32,7 +32,7 @@ img { max-width: 100%; display: block; }
 a { color: inherit; }
 h1, h2, h3 {
   font-family: var(--font-head);
-  color: var(--ink);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.02em;
   line-height: 1.15;
@@ -113,7 +113,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Page hero (interior pages) */
 .page-hero { background: var(--ink); color: #fff; padding: 56px 0; }
-.page-hero .eyebrow { color: var(--rattan-dim); }
+.page-hero .eyebrow { color: var(--accent-dim); }
 .page-hero h1 { color: #fff; font-size: clamp(2rem, 5vw, 2.8rem); margin: 0; }
 
 /* Home hero */
@@ -134,10 +134,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 .section-narrow { max-width: 760px; }
 
 /* Lineage / people */
-.lineage-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.lineage-card .portrait {
-  width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
-  background: var(--paper-dim); border: 2px solid var(--brand); margin-bottom: 20px;
+.lineage-grid { display: grid; grid-template-columns: 1fr; gap: 64px; }
+.lineage-grid .portrait {
+  width: 100%; aspect-ratio: 16 / 9; object-fit: cover;
+  background: var(--paper-dim); border: 2px solid var(--brand); margin-bottom: 24px;
 }
 .lineage-role {
   font-family: var(--font-head); text-transform: uppercase;
@@ -146,7 +146,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Quote */
 blockquote { border-left: 4px solid var(--brand); margin: 1.6em 0; padding: 0.2em 0 0.2em 1.2em; }
-blockquote p { font-family: var(--font-head); text-transform: none; font-size: 1.3rem; color: var(--ink); margin: 0; }
+blockquote p { font-family: var(--font-head); text-transform: none; font-size: 1.3rem; color: var(--accent); margin: 0; }
 
 /* Curriculum */
 .level-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
@@ -202,7 +202,7 @@ blockquote p { font-family: var(--font-head); text-transform: none; font-size: 1
 
 /* Contact */
 .contact-page { background: var(--ink); color: #fff; }
-.contact-page .eyebrow { color: var(--rattan-dim); }
+.contact-page .eyebrow { color: var(--accent-dim); }
 .contact-page h1, .contact-page h2 { color: #fff; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 24px; }
 .contact-block p { color: rgba(255,255,255,0.8); }
